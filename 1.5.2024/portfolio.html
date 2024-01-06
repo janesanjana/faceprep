@@ -23,11 +23,23 @@
         }
 
         main {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .left-section {
+            flex: 1;
+            padding-right: 10px;
+        }
+
+        .right-section {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             grid-gap: 30px;
-            justify-content: center;
-            padding: 20px;
+            width: 50%;
         }
 
         section {
@@ -35,11 +47,11 @@
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            transition: transform 0.2s;
+            transition: transform 0.5s;
         }
 
         section:hover {
-            transform: scale(1.03);
+            transform: scale(1.20);
         }
 
         section div {
@@ -82,6 +94,10 @@
     </header>
 
     <main>
+        <div class="left-section">
+            <img src="https://static.vecteezy.com/system/resources/previews/017/048/277/original/cute-dog-illustration-dog-kawaii-chibi-drawing-style-dog-cartoon-vector.jpg" alt="Jane's Image" width = 65%>
+        </div>
+        <div class = "right-section">
         <section>
             <div>
                 <h2>Education</h2>
@@ -109,8 +125,9 @@
                 <p>email: janelaxmi@gmail.com<br>linkedin: Jane Sanjana</p>
             </div>
         </section>
+        </div>
     </main>
-
+    <p style="padding : 20px;">To say a little bit about myself, I'm an avid reader and a sports enthusiast who is always ready to learn new things, take up new challenges and step out o my comfort zone! I also love meeting and interracting with people. You can always find me nose deep in a book or engaged in a steady conversation with the first person I see.</p>
     <footer>
         <p>&copy; 2024 Jane's Portfolio. All rights reserved to Jane.</p>
     </footer>
